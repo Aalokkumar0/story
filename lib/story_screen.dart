@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:story/widget/list_card.dart';
 
 class StoryScreen extends StatefulWidget {
   const StoryScreen({super.key});
@@ -21,9 +22,11 @@ class _StoryScreenState extends State<StoryScreen> {
           ),
         ),
       ),
-      body: Center(
-        child: Container(color: Colors.blue, height: 200, width: 200),
-      ),
+      body: ListView.builder(
+        itemCount: 20,
+        itemBuilder: (context, index) {
+          return ListCard();
+        },),
     );
   }
 }
