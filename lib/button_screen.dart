@@ -8,11 +8,9 @@ class ButtonScreen extends StatefulWidget {
 }
 
 class _ButtonScreenState extends State<ButtonScreen> {
-
-
   final _titleEditingController = TextEditingController();
 
-   final _contentEditingController = TextEditingController();
+  final _contentEditingController = TextEditingController();
 
   void printtitle() {
     // ignore: avoid_print
@@ -22,12 +20,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
 
     _titleEditingController.clear();
     _contentEditingController.clear();
-
-
   }
-
- 
-  
 
   @override
   Widget build(BuildContext context) {
@@ -48,30 +41,49 @@ class _ButtonScreenState extends State<ButtonScreen> {
                 ),
               ),
             ),
-            
-            SizedBox(height: 20,),
 
+            SizedBox(height: 20),
 
             TextField(
               controller: _contentEditingController,
               decoration: InputDecoration(
                 icon: Icon(Icons.send),
-                labelText:"Contant...",
+                labelText: "Contant...",
 
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(20)
-              )
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(20),
+                ),
               ),
             ),
 
+            SizedBox(height: 20),
 
-            SizedBox(height: 20,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                OutlinedButton(
+                  onPressed: () {
 
-            ElevatedButton(
-              onPressed: () {
-                printtitle();
-              },
-              child: Text("print"),
+                  },
+                  child: const Text(
+                    "Cancle",
+                    style: TextStyle(color: Colors.red),
+                  ),
+                ),
+
+                
+
+                OutlinedButton(
+                  style: OutlinedButton.styleFrom(backgroundColor: Colors.green),
+                  onPressed: () {  
+                  
+                  },
+                  child: const Text(
+                    "Save",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
