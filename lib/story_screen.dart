@@ -33,6 +33,7 @@ class _StoryScreenState extends State<StoryScreen> {
         onPressed: () {
           showModalBottomSheet(
             context: context,
+            isScrollControlled: true,
             builder: (context) {
               return ButtonScreen();
             },
