@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:story/button_screen.dart';
 import 'package:story/widget/list_card.dart';
 
 class StoryScreen extends StatefulWidget {
@@ -30,10 +31,15 @@ class _StoryScreenState extends State<StoryScreen> {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: (){
-            // ignore: avoid_print
-            print("floting");
+            showModalBottomSheet(
+              context: context,
+              builder: (context) {
+                return ButtonScreen();
+              },
+              );
           },
           backgroundColor: Colors.yellow,
+          hoverColor: Colors.red,
           child:Icon(Icons.add, color:Colors.black,),
           ),
     );
