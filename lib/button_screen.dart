@@ -43,7 +43,6 @@ class _ButtonScreenState extends State<ButtonScreen> {
             ),
 
             SizedBox(height: 20),
-
             TextField(
               controller: _contentEditingController,
               decoration: InputDecoration(
@@ -63,7 +62,7 @@ class _ButtonScreenState extends State<ButtonScreen> {
               children: [
                 OutlinedButton(
                   onPressed: () {
-
+                    Navigator.pop(context);
                   },
                   child: const Text(
                     "Cancle",
@@ -71,13 +70,11 @@ class _ButtonScreenState extends State<ButtonScreen> {
                   ),
                 ),
 
-                
-
                 OutlinedButton(
-                  style: OutlinedButton.styleFrom(backgroundColor: Colors.green),
-                  onPressed: () {  
-                  
-                  },
+                  style: OutlinedButton.styleFrom(
+                    backgroundColor: Colors.green,
+                  ),
+                  onPressed: () {},
                   child: const Text(
                     "Save",
                     style: TextStyle(color: Colors.white),
