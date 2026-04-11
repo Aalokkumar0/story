@@ -26,7 +26,16 @@ class _StoryScreenState extends State<StoryScreen> {
         itemCount: 20,
         itemBuilder: (context, index) {
           return ListCard();
-        },),
+        },
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: (){
+            // ignore: avoid_print
+            print("floting");
+          },
+          backgroundColor: Colors.yellow,
+          child:Icon(Icons.add, color:Colors.black,),
+          ),
     );
   }
 }

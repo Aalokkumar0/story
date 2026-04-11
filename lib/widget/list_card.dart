@@ -7,19 +7,19 @@ class ListCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       margin: EdgeInsets.only(top: 10, left: 10, right: 10),
-      color: Colors.amber,
+      color: const Color.fromARGB(255, 63, 56, 34),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              "Title",
-              style: TextStyle(fontWeight: FontWeight.w900, fontSize: 23),
+              "𓂃Title",
+              style: TextStyle(fontWeight: FontWeight.w900, fontSize: 23,color: Colors.white),
             ),
             SizedBox(height: 10),
             Text(
-              "Contant",
+              "🪐 Contant",
               style: TextStyle(
                 fontWeight: FontWeight.w500,
                 fontSize: 18,
@@ -27,8 +27,7 @@ class ListCard extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10),
-            Text(
-              
+            Text(           
               "22/04/2026",
               style: TextStyle(
                 fontWeight: FontWeight.w500,
