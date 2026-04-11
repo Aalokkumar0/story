@@ -28,20 +28,20 @@ class _StoryScreenState extends State<StoryScreen> {
         itemBuilder: (context, index) {
           return ListCard();
         },
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: (){
-            showModalBottomSheet(
-              context: context,
-              builder: (context) {
-                return ButtonScreen();
-              },
-              );
-          },
-          backgroundColor: Colors.yellow,
-          hoverColor: Colors.red,
-          child:Icon(Icons.add, color:Colors.black,),
-          ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          showModalBottomSheet(
+            context: context,
+            builder: (context) {
+              return ButtonScreen();
+            },
+          );
+        },
+        backgroundColor: Colors.yellow,
+        hoverColor: Colors.red,
+        child: Icon(Icons.add, color: Colors.black),
+      ),
     );
   }
 }

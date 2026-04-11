@@ -1,22 +1,26 @@
 import 'package:flutter/material.dart';
 
-class ButtonScreen extends StatefulWidget{
+class ButtonScreen extends StatefulWidget {
   const ButtonScreen({super.key});
 
   @override
- State<ButtonScreen> createState ()=> _ButtonScreenState();
+  State<ButtonScreen> createState() => _ButtonScreenState();
 }
 
-class _ButtonScreenState extends State<ButtonScreen>{
-  
+class _ButtonScreenState extends State<ButtonScreen> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       scrollDirection: Axis.vertical,
-      child: Container(
-        height: 500,
-        color:Color.fromARGB(255, 162, 143, 92),
-        
+      child: Column(
+        children: [
+          // ignore: sized_box_for_whitespace
+          Container(
+            height: 500,
+            width: 400,
+            child: Center(child: Text("this is buttomsheet")),
+          ),
+        ],
       ),
     );
   }
