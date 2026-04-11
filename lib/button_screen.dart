@@ -15,8 +15,8 @@ class _ButtonScreenState extends State<ButtonScreen>{
       scrollDirection: Axis.vertical,
       child: Container(
         height: 500,
+        color:Color.fromARGB(255, 162, 143, 92),
         
-        color:Colors.amber,
       ),
     );
   }
