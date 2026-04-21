@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:story/story_screen.dart';
+import 'package:story/screens/story_screen.dart';
 
 void main(){
   runApp(MyStoryApp());

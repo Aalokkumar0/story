@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:story/button_screen.dart';
+import 'package:story/screens/button_screen.dart';
 import 'package:story/widget/list_card.dart';
 
 class StoryScreen extends StatefulWidget {
