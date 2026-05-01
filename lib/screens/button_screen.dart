@@ -47,9 +47,10 @@ class _ButtonScreenState extends State<ButtonScreen> {
       padding: EdgeInsets.fromLTRB(24, 16, 24, 24 + bottomPadding),
       child: Form(
         key: _formKey,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Handle bar
             Center(
@@ -161,7 +162,8 @@ class _ButtonScreenState extends State<ButtonScreen> {
               ],
             ),
           ],
-        ),
+        ),  // Column
+        ),  // SingleChildScrollView
       ),
     );
   }
