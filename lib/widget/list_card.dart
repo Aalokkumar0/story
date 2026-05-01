@@ -20,7 +20,7 @@ class ListCard extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
           gradient: LinearGradient(
-            colors: [Colors.transparent, Colors.red.withOpacity(0.7)],
+            colors: [Colors.transparent, Colors.red.withValues(alpha: 0.7)],
           ),
         ),
         child: const Column(
@@ -185,7 +185,7 @@ class ListCard extends StatelessWidget {
               Text(
                 entry.content,
                 style: const TextStyle(
-                  color: Colors.red.withValues(alpha: 0.7),
+                  color: Colors.white70,
                   fontSize: 15,
                   height: 1.6,
                 ),

@@ -55,7 +55,7 @@ class _StoryScreenState extends State<StoryScreen> {
           Container(
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
-              color: const Color(0xFFFFD700).withOpacity(0.15),
+              color: const Color(0xFFFFD700).withValues(alpha: 0.15),
               borderRadius: BorderRadius.circular(12),
             ),
             child: const Text('📚', style: TextStyle(fontSize: 20)),
